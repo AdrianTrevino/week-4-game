@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crystal Game</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <h1 id="title">Crystals Collector!</h1>  
+  <br><br><br><br><br><br><br>
+  <div id="in-back">
+    <p id="instructions">You have a random number to guess at the start of the game!
+      <br><br>
+      Out of the four crystals below, each one has a certain point when you click. 
+      <br><br> 
+      You win if you can match your number to the randomly guessed number from the beginning. You lose if you go over that randomly guessed number.
+      <br><br>
+      The value of each crystal is hidden. You can click on it to find out the amount of points it's worth.
+      <br><br>
+      Each time you start the game, the value of the crystals change. No body said it was going to be easy! Good luck!!</p>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div id="target-back">
+    <p id="numGuess">Number to Guess:<br><br> <span id="targetNumber"></span></p>
+  </div>
+
+  <div id="counter-back">
+    <p id="wins">Wins: <span id="winCounter"></span></p>
+    <p id="losses">Losses: <span id="lossCounter"></span></p>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <div class="back">
+    <img class="crystal-img" id="Crystal1" src="assets/images/cry1.jpg" alt="Cr1">
+  </div>
+  <div class="back">
+    <img class="crystal-img" id="Crystal2" src="assets/images/cry2.jpg" alt="Cr2">
+  </div>
+  <div class="back">
+    <img class="crystal-img" id="Crystal3" src="assets/images/cry3.jpg" alt="Cr3">
+  </div>
+  <div class="back">
+    <img class="crystal-img" id="Crystal4" src="assets/images/cry4.jpg" alt="Cr4">
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <div id="score">
+    <p id="score-txt">Your total score is:</p>
+  </div>
+
+  <br><br><br><br>
+
+  <div id="score-back">
+    <div id="curScore"></div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="assets/javascript/game.js"></script>
+</body>
+</html>
